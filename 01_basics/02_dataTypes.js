@@ -19,7 +19,7 @@ let state;
 // string => ""
 // boolean => true/false
 // null => standalone value
-// undefined => like let userName;
+// undefined => 
 // symbol => unique
 
 
