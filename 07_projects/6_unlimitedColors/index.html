@@ -30,7 +30,7 @@ let randomColor = function () {
  
 };
 
-// randomColor()
+randomColor()
 
 
 // console.log(Math.random());
@@ -49,6 +49,8 @@ const startChangingColor = function () {
     document.body.style.backgroundColor = randomColor();
   }
 };
+
+
 const stopChangingColor = function () {
   clearInterval(intervalId);
   intervalId = null;

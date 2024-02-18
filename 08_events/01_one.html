@@ -46,19 +46,40 @@
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
-   
+
+
+
+    // First Mothod
     
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
-        }
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e);
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
     
         
-    })
-    
+    // })
+
     //removeIt.parentNode.removeChild(removeIt)
+
+
+    // Second Mothod
+    let getList = document.querySelector('#images').children    
+    let listArray = Array.from(getList)   
+
+    listArray.forEach(element => {
+        element.addEventListener('click', (e) => {
+        //    console.log(e.target.parentNode);
+           let getTarget = e.target.parentNode;
+           getTarget.remove()
+        })
+    });
+
+
+    
+    
 </script>
 </html>
