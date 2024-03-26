@@ -1,2 +1,2 @@
-# javascript-chai-with-code
+## javascript-chai-with-code
 Learning JavaScript from Chai with Code
