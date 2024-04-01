@@ -1,2 +1,2 @@
 ## javascript-chai-with-code
-Learning JavaScript from Chai with Code moom
+Learning JavaScript from Chai with Code
